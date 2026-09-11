@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política de Privacidad - SnapSell AI</title>
+    <style>
+        :root {
+            --primary: #6366F1;
+            --primary-dark: #4F46E5;
+            --surface: #FFFFFF;
+            --bg: #F8FAFC;
+            --text: #0F172A;
+            --text-muted: #64748B;
+            --border: #E2E8F0;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background-color: var(--bg);
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            background: var(--surface);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05);
+            border: 1px solid var(--border);
+        }
+        h1 {
+            color: var(--primary-dark);
+            font-size: 28px;
+            margin-bottom: 8px;
+        }
+        .date {
+            color: var(--text-muted);
+            font-size: 14px;
+            margin-bottom: 30px;
+        }
+        h2 {
+            color: var(--text);
+            font-size: 20px;
+            margin-top: 28px;
+            border-bottom: 2px solid #EEF2FF;
+            padding-bottom: 6px;
+        }
+        p, li {
+            color: #334155;
+            font-size: 15px;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .badge {
+            display: inline-block;
+            background: #EEF2FF;
+            color: var(--primary-dark);
+            padding: 4px 12px;
+            border-radius: 999px;
+            font-weight: 600;
+            font-size: 12px;
+            margin-bottom: 16px;
+        }
+        footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border);
+            text-align: center;
+            font-size: 13px;
+            color: var(--text-muted);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <span class="badge">SnapSell AI Mobile</span>
+        <h1>Política de Privacidad</h1>
+        <div class="date">Última actualización: 11 de Septiembre de 2026</div>
+
+        <p>En <strong>SnapSell AI</strong> nos tomamos muy en serio la privacidad y la protección de los datos de nuestros usuarios. Esta Política de Privacidad describe qué información recopilamos, cómo se utiliza y cómo se protege al utilizar nuestra aplicación móvil para Android.</p>
+
+        <h2>1. Información que Recopilamos y Permisos</h2>
+        <p>SnapSell AI está diseñada para funcionar con la mínima cantidad de datos necesaria para brindar su servicio de fotografía comercial con Inteligencia Artificial:</p>
+        <ul>
+            <li><strong>Cámara (android.permission.CAMERA):</strong> Se utiliza exclusivamente cuando el usuario decide capturar una fotografía de un producto dentro de la aplicación. Las imágenes son procesadas bajo la solicitud explícita del usuario.</li>
+            <li><strong>Almacenamiento y Galería (android.permission.WRITE_EXTERNAL_STORAGE hasta Android 9 / MediaStore en Android 10+):</strong> Se utiliza únicamente para permitir al usuario seleccionar fotos de productos existentes y para guardar las imágenes generadas por la IA en el álbum <code>DCIM/SnapSellAI</code> de su dispositivo.</li>
+            <li><strong>Acceso a Internet (android.permission.INTERNET):</strong> Necesario para comunicarse de forma cifrada mediante HTTPS con los servicios de Inteligencia Artificial (Google AI Studio / Vertex AI) y Google Play Billing.</li>
+            <li><strong>Servicio de Facturación (com.android.vending.BILLING):</strong> Permite la compra segura de paquetes de créditos dentro de la aplicación a través de la pasarela oficial de Google Play Store.</li>
+        </ul>
+
+        <h2>2. Procesamiento de Imágenes e Inteligencia Artificial</h2>
+        <p>Cuando solicitas la generación de fotografías de producto (fondo blanco, entornos de uso real, infografías o calidad), la imagen seleccionada se transmite de forma cifrada (HTTPS/TLS) a las API de Google AI Studio / Vertex AI (Google Cloud Platform). Las imágenes se procesan de manera transitoria únicamente con el fin de generar el contenido publicitario solicitado.</p>
+
+        <h2>3. Pagos y Compras dentro de la App (In-App Purchases)</h2>
+        <p>Todas las transacciones financieras y compras de paquetes de créditos son procesadas directamente por <strong>Google Play Store</strong>. SnapSell AI nunca recopila, almacena ni tiene acceso a números de tarjetas de crédito, cuentas bancarias ni credenciales de pago.</p>
+
+        <h2>4. Seguridad y Almacenamiento Local</h2>
+        <p>El saldo de créditos y las preferencias de configuración de la app se guardan localmente en el dispositivo utilizando cifrado criptográfico avanzado en hardware (<strong>AES-256-GCM</strong> mediante Android Keystore). No vendemos, comercializamos ni transferimos tus datos a terceros.</p>
+
+        <h2>5. Derechos del Usuario y Eliminación de Datos</h2>
+        <p>Dado que no almacenamos tus fotografías ni datos personales en servidores propios permanentes, puedes eliminar cualquier dato simplemente borrando la caché de la aplicación o desinstalándola de tu dispositivo.</p>
+
+        <h2>6. Contacto</h2>
+        <p>Si tienes preguntas sobre esta Política de Privacidad o sobre el funcionamiento de SnapSell AI, puedes ponerte en contacto con nosotros a través del correo de soporte proporcionado en la ficha de Google Play Store.</p>
+
+        <footer>
+            &copy; 2026 SnapSell AI. Todos los derechos reservados.
+        </footer>
+    </div>
+</body>
+</html>
