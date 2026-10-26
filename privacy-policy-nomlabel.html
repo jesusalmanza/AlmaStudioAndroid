@@ -17,10 +17,15 @@
             --brand-primary: #38bdf8;
             --brand-glow: rgba(56, 189, 248, 0.15);
             --accent-green: #34d399;
+            --warning-amber: #fbbf24;
             --tag-bg: #0f172a;
         }
 
-        * { box-sizing: border-box; margin: 0; padding: 0; }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
 
         body {
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
@@ -30,7 +35,10 @@
             padding: 40px 20px;
         }
 
-        .container { max-width: 860px; margin: 0 auto; }
+        .container {
+            max-width: 860px;
+            margin: 0 auto;
+        }
 
         .header {
             text-align: center;
@@ -49,6 +57,7 @@
             font-size: 0.85rem;
             font-weight: 500;
             margin-bottom: 16px;
+            letter-spacing: 0.5px;
         }
 
         h1 {
@@ -56,9 +65,13 @@
             font-weight: 700;
             color: #ffffff;
             margin-bottom: 10px;
+            letter-spacing: -0.5px;
         }
 
-        .meta { color: var(--text-secondary); font-size: 0.95rem; }
+        .meta {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }
 
         .card {
             background-color: var(--surface-color);
@@ -74,6 +87,9 @@
             font-weight: 600;
             color: var(--brand-primary);
             margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
         }
 
         h3 {
@@ -83,10 +99,21 @@
             margin: 18px 0 8px 0;
         }
 
-        p { color: var(--text-secondary); margin-bottom: 14px; font-size: 1rem; }
-        p strong { color: var(--text-primary); }
+        p {
+            color: var(--text-secondary);
+            margin-bottom: 14px;
+            font-size: 1rem;
+        }
 
-        ul { list-style: none; padding-left: 0; margin-bottom: 16px; }
+        p strong {
+            color: var(--text-primary);
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 0;
+            margin-bottom: 16px;
+        }
 
         ul li {
             position: relative;
@@ -112,7 +139,12 @@
             border: 1px solid var(--surface-border);
         }
 
-        table { width: 100%; border-collapse: collapse; font-size: 0.95rem; text-align: left; }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.95rem;
+            text-align: left;
+        }
 
         th {
             background-color: var(--tag-bg);
@@ -128,14 +160,16 @@
             border-bottom: 1px solid var(--surface-border);
         }
 
-        tr:last-child td { border-bottom: none; }
+        tr:last-child td {
+            border-bottom: none;
+        }
 
         code {
             background: var(--tag-bg);
             color: var(--accent-green);
             padding: 3px 8px;
             border-radius: 6px;
-            font-family: monospace;
+            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
             font-size: 0.88rem;
             border: 1px solid var(--surface-border);
         }
@@ -148,7 +182,10 @@
             margin: 20px 0;
         }
 
-        .highlight-box p { color: #e0f2fe; margin-bottom: 0; }
+        .highlight-box p {
+            color: #e0f2fe;
+            margin-bottom: 0;
+        }
 
         .footer {
             text-align: center;
@@ -170,6 +207,10 @@
             text-decoration: none;
             font-weight: 500;
             margin-top: 8px;
+        }
+
+        .contact-pill:hover {
+            border-color: var(--brand-primary);
         }
     </style>
 </head>
@@ -217,6 +258,7 @@
 
         <section class="card">
             <h2>3. Permisos de la Aplicación y Finalidad</h2>
+            <p>Los permisos solicitados en el manifiesto de la aplicación se limitan a lo indispensable para la operación técnica:</p>
             <div class="table-responsive">
                 <table>
                     <thead>
@@ -255,18 +297,24 @@
             </ul>
         </section>
 
-        <section class="card">
-            <h2>5. Retención y Eliminación de Datos</h2>
-            <p>Usted tiene el control total de sus datos:</p>
+        <section class="card" id="eliminacion">
+            <h2>5. Retención y Solicitud de Eliminación de Datos</h2>
+            <p>Usted tiene el control total de su información:</p>
             <ul>
-                <li>Al eliminar un producto o expediente dentro de la aplicación, este se borra de manera definitiva de la base de datos local de su teléfono.</li>
-                <li>Al desinstalar la Aplicación o borrar los datos desde los ajustes del sistema operativo Android, todos los datos locales y expedientes generados son eliminados por completo e inmediatamente de su equipo.</li>
+                <li><strong>Eliminación directa desde la app:</strong> Al eliminar un producto o expediente dentro del historial de la aplicación, este se borra de manera definitiva e irreversible de la base de datos local de su dispositivo.</li>
+                <li><strong>Eliminación completa del dispositivo:</strong> Al desinstalar la Aplicación o borrar el almacenamiento y caché desde los <em>Ajustes de Android &gt; Aplicaciones &gt; NomLabel Pro &gt; Almacenamiento &gt; Borrar datos</em>, todos los expedientes, recetas y configuraciones locales son eliminados al instante.</li>
+                <li><strong>Solicitud por correo electrónico:</strong> Debido a que no almacenamos cuentas de usuario ni guardamos datos en servidores externos permanentes, no retenemos información personal en la nube. Sin embargo, si requiere asistencia o confirmación sobre la eliminación de cualquier registro técnico, puede enviar su solicitud a <a href="mailto:soporte@nomlabelpro.ai" style="color: var(--brand-primary);">soporte@nomlabelpro.ai</a> con el asunto <em>"Solicitud de Eliminación de Datos"</em> y será atendida en un plazo máximo de 48 horas.</li>
             </ul>
         </section>
 
         <section class="card">
-            <h2>6. Contacto y Soporte</h2>
-            <p>Si tiene dudas o preguntas relacionadas con esta Política de Privacidad o con la aplicación, puede comunicarse con nosotros en:</p>
+            <h2>6. Cambios a esta Política</h2>
+            <p>Podemos actualizar esta Política de Privacidad en cualquier momento para reflejar mejoras en la aplicación o adaptaciones normativas. La fecha de "Última actualización" al inicio del documento reflejará la versión vigente.</p>
+        </section>
+
+        <section class="card">
+            <h2>7. Contacto y Soporte</h2>
+            <p>Si tiene dudas, preguntas o solicitudes relacionadas con esta Política de Privacidad o con el funcionamiento de la aplicación, puede comunicarse con nosotros en:</p>
             <a href="mailto:soporte@nomlabelpro.ai" class="contact-pill">soporte@nomlabelpro.ai</a>
         </section>
 
