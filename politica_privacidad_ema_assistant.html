@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Política de Privacidad | Ema: Baby Assistant AI</title>
+  <meta name="description" content="Política de Privacidad oficial para Ema: Baby Assistant AI. Tratamiento seguro de datos, audio y bioacústica neonatal.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #4F46E5;
+      --primary-light: #EEF2FF;
+      --secondary: #06B6D4;
+      --accent: #F43F5E;
+      --dark: #0F172A;
+      --slate: #334155;
+      --muted: #64748B;
+      --light-bg: #F8FAFC;
+      --white: #FFFFFF;
+      --border: #E2E8F0;
+      --success: #10B981;
+      --radius: 16px;
+      --shadow: 0 10px 25px -5px rgba(15, 23, 42, 0.05), 0 8px 10px -6px rgba(15, 23, 42, 0.03);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background-color: var(--light-bg);
+      color: var(--slate);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    header {
+      background: linear-gradient(135deg, #1E1B4B 0%, #312E81 50%, #4338CA 100%);
+      color: var(--white);
+      padding: 60px 20px 80px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    header::after {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -20%;
+      width: 140%;
+      height: 200%;
+      background: radial-gradient(circle at center, rgba(6, 182, 212, 0.15) 0%, transparent 60%);
+      pointer-events: none;
+    }
+
+    .header-content {
+      position: relative;
+      max-width: 800px;
+      margin: 0 auto;
+      z-index: 1;
+    }
+
+    .app-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(255, 255, 255, 0.12);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      padding: 6px 16px;
+      border-radius: 999px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      letter-spacing: 0.03em;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 800;
+      margin-bottom: 12px;
+      letter-spacing: -0.02em;
+    }
+
+    .last-updated {
+      font-size: 0.95rem;
+      color: rgba(255, 255, 255, 0.75);
+    }
+
+    .lang-switcher {
+      display: inline-flex;
+      background: rgba(255, 255, 255, 0.15);
+      border-radius: 999px;
+      padding: 4px;
+      margin-top: 24px;
+    }
+
+    .lang-btn {
+      background: transparent;
+      border: none;
+      color: rgba(255, 255, 255, 0.8);
+      font-family: inherit;
+      font-size: 0.85rem;
+      font-weight: 700;
+      padding: 8px 18px;
+      border-radius: 999px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .lang-btn.active {
+      background: var(--white);
+      color: var(--primary);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    main {
+      max-width: 860px;
+      margin: -40px auto 60px;
+      padding: 0 20px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .highlights-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 16px;
+      margin-bottom: 32px;
+    }
+
+    .highlight-card {
+      background: var(--white);
+      border-radius: var(--radius);
+      padding: 20px;
+      box-shadow: var(--shadow);
+      border: 1px solid var(--border);
+      text-align: center;
+      transition: transform 0.2s ease;
+    }
+
+    .highlight-card:hover {
+      transform: translateY(-2px);
+    }
+
+    .highlight-icon {
+      font-size: 2rem;
+      margin-bottom: 8px;
+    }
+
+    .highlight-title {
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: var(--dark);
+      margin-bottom: 4px;
+    }
+
+    .highlight-desc {
+      font-size: 0.8rem;
+      color: var(--muted);
+      line-height: 1.4;
+    }
+
+    .content-card {
+      background: var(--white);
+      border-radius: var(--radius);
+      padding: 48px;
+      box-shadow: var(--shadow);
+      border: 1px solid var(--border);
+    }
+
+    .section {
+      margin-bottom: 40px;
+    }
+
+    .section:last-child {
+      margin-bottom: 0;
+    }
+
+    h2 {
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: var(--dark);
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      border-bottom: 2px solid var(--primary-light);
+      padding-bottom: 8px;
+    }
+
+    .section-icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 32px;
+      height: 32px;
+      border-radius: 8px;
+      background: var(--primary-light);
+      color: var(--primary);
+      font-size: 1.1rem;
+    }
+
+    p {
+      margin-bottom: 14px;
+      font-size: 1rem;
+      color: var(--slate);
+    }
+
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+      margin-bottom: 16px;
+    }
+
+    li {
+      position: relative;
+      padding-left: 28px;
+      margin-bottom: 10px;
+      font-size: 0.95rem;
+    }
+
+    li::before {
+      content: '✓';
+      position: absolute;
+      left: 0;
+      color: var(--success);
+      font-weight: 800;
+    }
+
+    .callout {
+      background: var(--primary-light);
+      border-left: 4px solid var(--primary);
+      padding: 16px 20px;
+      border-radius: 0 12px 12px 0;
+      margin: 20px 0;
+      font-size: 0.95rem;
+    }
+
+    .callout strong {
+      color: var(--primary);
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px 20px;
+      font-size: 0.85rem;
+      color: var(--muted);
+      border-top: 1px solid var(--border);
+      background: var(--white);
+    }
+
+    .hidden {
+      display: none !important;
+    }
+
+    @media (max-width: 640px) {
+      header {
+        padding: 40px 16px 60px;
+      }
+      h1 {
+        font-size: 1.9rem;
+      }
+      .content-card {
+        padding: 24px 18px;
+      }
+      .highlights-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="header-content">
+      <div class="app-badge">
+        <span>👶</span> Ema: Baby Assistant AI
+      </div>
+      <h1 id="header-title">Política de Privacidad</h1>
+      <p class="last-updated" id="last-updated-text">Última actualización: 29 de octubre de 2026</p>
+
+      <div class="lang-switcher">
+        <button class="lang-btn active" onclick="switchLang('es')">🇪🇸 Español</button>
+        <button class="lang-btn" onclick="switchLang('en')">🇺🇸 English</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HIGHLIGHTS CARDS -->
+    <div class="highlights-grid">
+      <div class="highlight-card">
+        <div class="highlight-icon">🎙️</div>
+        <div class="highlight-title" data-i18n="h1_title">Audio Efímero</div>
+        <div class="highlight-desc" data-i18n="h1_desc">El audio se procesa en memoria; no se guarda en servidores.</div>
+      </div>
+      <div class="highlight-card">
+        <div class="highlight-icon">🔒</div>
+        <div class="highlight-title" data-i18n="h2_title">Cifrado SHA-256</div>
+        <div class="highlight-desc" data-i18n="h2_desc">Identificador por hardware con hash criptográfico irreversible.</div>
+      </div>
+      <div class="highlight-card">
+        <div class="highlight-icon">🛡️</div>
+        <div class="highlight-title" data-i18n="h3_title">Sin Venta de Datos</div>
+        <div class="highlight-desc" data-i18n="h3_desc">No vendemos datos a anunciantes ni terceros comerciales.</div>
+      </div>
+      <div class="highlight-card">
+        <div class="highlight-icon">💳</div>
+        <div class="highlight-title" data-i18n="h4_title">Google Play Billing</div>
+        <div class="highlight-desc" data-i18n="h4_desc">Pagos y suscripciones 100% gestionados por Google.</div>
+      </div>
+    </div>
+
+    <!-- MAIN POLICY CONTENT -->
+    <div class="content-card">
+
+      <!-- SPANISH CONTENT -->
+      <div id="content-es">
+        <div class="section">
+          <h2><span class="section-icon">👶</span> 1. Introducción y Compromiso</h2>
+          <p>En <strong>Ema: Baby Assistant AI</strong> («la Aplicación»), la privacidad y la protección de los datos de las familias, sus bebés y cuidadores es nuestra máxima prioridad. Esta Política de Privacidad describe de manera transparente qué datos se procesan, con qué fin y las estrictas medidas de seguridad que garantizan que la intimidad de tu hogar se mantenga siempre protegida.</p>
+        </div>
+
+        <div class="section">
+          <h2><span class="section-icon">🎙️</span> 2. Tratamiento del Audio y Micrófono (RECORD_AUDIO)</h2>
+          <p>La aplicación solicita acceso al micrófono de tu dispositivo bajo las siguientes condiciones reglamentarias estrictas:</p>
+          <ul>
+            <li><strong>Propósito único:</strong> Capturar fragmentos acústicos del llanto del recién nacido para determinar su frecuencia fundamental (análisis bioacústico de hambre, sueño, cólico, eructo e incomodidad) y posibilitar la interacción por voz manos libres con la asistente virtual Ema IA.</li>
+            <li><strong>Procesamiento en memoria (Efímero):</strong> El audio se procesa en tiempo real y se descarta inmediatamente de la memoria RAM del dispositivo una vez analizado. <strong>No almacenamos, grabamos ni transmitimos archivos de audio de voz permanente a servidores externos.</strong></li>
+            <li><strong>Sin reconocimiento biométrico de adultos:</strong> La app no realiza perfilamiento de voz humana adulta, identificación forense ni reconocimiento facial.</li>
+          </ul>
+        </div>
+
+        <div class="section">
+          <h2><span class="section-icon">🔐</span> 3. Identificador de Dispositivo por Hardware y Licenciamiento</h2>
+          <p>Para brindarte una experiencia fluida sin obligarte a registrar correos electrónicos ni contraseñas, la aplicación utiliza una validación de dispositivo por hardware:</p>
+          <ul>
+            <li><strong>Cifrado criptográfico irreversible (SHA-256):</strong> El identificador único de hardware (ANDROID_ID) nunca viaja en texto claro por internet. En el propio dispositivo se calcula un hash criptográfico de una sola vía (SHA-256) antes de consultar el estado de tu licencia. Es matemáticamente imposible reconstruir el identificador original de tu teléfono a partir del hash.</li>
+            <li><strong>Finalidad exclusiva:</strong> Verificar el estado de los días de prueba gratuitos, evitar abusos por reinstalación repetida y restaurar automáticamente tus compras y planes activos.</li>
+            <li><strong>No vinculado a identidad personal:</strong> El hash nunca se asocia a tu nombre real, cuentas de redes sociales, ubicación GPS ni datos bancarios.</li>
+          </ul>
+        </div>
+
+        <div class="section">
+          <h2><span class="section-icon">📊</span> 4. Almacenamiento Local de Rutinas Pediátricas</h2>
+          <p>Toda la bitácora de alimentación (lactancia/biberón), cambios de pañal, registros de descanso y eventos de calma se guarda <strong>exclusivamente en el almacenamiento seguro local (sandbox) de tu teléfono Android</strong>. Ningún registro personal de la rutina de tu bebé se comparte con terceros con fines publicitarios.</p>
+        </div>
+
+        <div class="section">
+          <h2><span class="section-icon">💳</span> 5. Pagos y Suscripciones (Google Play Billing)</h2>
+          <p>Todas las transacciones monetarias y suscripciones mensuales de <em>Ema Pro</em> son procesadas íntegramente por <strong>Google Play Billing</strong> bajo los estándares de seguridad bancaria de Google LLC. Nosotros jamás recibimos, procesamos ni almacenamos tus números de tarjeta de crédito ni cuentas bancarias.</p>
+        </div>
+
+        <div class="section">
+          <h2><span class="section-icon">🛡️</span> 6. Privacidad Infantil (COPPA y GDPR-K)</h2>
+          <p>Nuestra aplicación está diseñada exclusivamente para ser operada por madres, padres y cuidadores adultos. No recopilamos conscientemente datos personales identificables de menores de 13 años.</p>
+        </div>
+
+        <div class="section">
+          <h2><span class="section-icon">🗑️</span> 7. Eliminación y Control de tus Datos</h2>
+          <p>Como usuario, tienes el control absoluto de tus datos:</p>
+          <ul>
+            <li>Puedes borrar toda la información almacenada en cualquier momento eliminando los datos de la app desde la configuración de Android o desinstalando la aplicación.</li>
+            <li>Para cualquier duda o solicitud de asistencia respecto a tu identificador anónimo de licencia, puedes escribirnos directamente a nuestro correo de soporte.</li>
+          </ul>
+        </div>
+
+        <div class="section">
+          <h2><span class="section-icon">✉️</span> 8. Contacto de Soporte y Responsable</h2>
+          <div class="callout">
+            <p><strong>Equipo de Desarrollo de Ema: Baby Assistant AI</strong></p>
+            <p>Correo de atención y soporte de privacidad: <strong>soporte@emababyassistant.com</strong></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- ENGLISH CONTENT -->
+      <div id="content-en" class="hidden">
+        <div class="section">
+          <h2><span class="section-icon">👶</span> 1. Introduction & Commitment</h2>
+          <p>At <strong>Ema: Baby Assistant AI</strong> ("the Application"), safeguarding the privacy and security of families, their newborns, and caregivers is our highest priority. This Privacy Policy transparently details how data is handled, its specific purpose, and the strict technical measures ensuring your home privacy remains intact.</p>
+        </div>
+
+        <div class="section">
+          <h2><span class="section-icon">🎙️</span> 2. Audio Processing & Microphone Permission (RECORD_AUDIO)</h2>
+          <p>The Application requests microphone access under strict regulatory privacy conditions:</p>
+          <ul>
+            <li><strong>Exclusive Purpose:</strong> Capturing brief acoustic segments of baby crying to extract frequency curves (bioacoustic interpretation of hunger, tiredness, colic, burping, or discomfort) and enabling natural hands-free conversational voice assistance with Ema AI.</li>
+            <li><strong>In-Memory Ephemeral Processing:</strong> Audio streams are analyzed in real time and discarded from RAM immediately after feature extraction. <strong>We do not permanently record, save, or transmit voice audio files to remote servers.</strong></li>
+            <li><strong>No Adult Voice Biometrics:</strong> The app does not profile adult voices, perform voiceprint identification, or conduct facial recognition.</li>
+          </ul>
+        </div>
+
+        <div class="section">
+          <h2><span class="section-icon">🔐</span> 3. Hardware Device Identifier & Cloud Licensing</h2>
+          <p>To provide a frictionless experience without forcing parents to register usernames or passwords, the app uses hardware device validation:</p>
+          <ul>
+            <li><strong>One-Way Cryptographic Hash (SHA-256):</strong> The hardware identifier (ANDROID_ID) is never transmitted in plain text. A cryptographic SHA-256 hash is computed locally on the device before querying license status. It is mathematically impossible to retrieve the raw hardware ID from the hash.</li>
+            <li><strong>Single Purpose:</strong> Checking remaining trial days, preventing repeat trial exploitation upon reinstall, and automatically restoring active subscriptions and credits.</li>
+            <li><strong>No Personal Link:</strong> The cryptographic hash is never linked to real names, social profiles, GPS location, or banking info.</li>
+          </ul>
+        </div>
+
+        <div class="section">
+          <h2><span class="section-icon">📊</span> 4. Local Pediatric Wellness Log Storage</h2>
+          <p>All baby care logs (feedings, diaper changes, sleep rhythms, and soothing sessions) are saved <strong>strictly within local private sandbox storage on your Android device</strong>. No personal wellness entries are shared with third parties or advertising brokers.</p>
+        </div>
+
+        <div class="section">
+          <h2><span class="section-icon">💳</span> 5. Payments & Subscriptions (Google Play Billing)</h2>
+          <p>All financial transactions and monthly subscriptions for <em>Ema Pro</em> are processed entirely by <strong>Google Play Billing</strong> under Google LLC's certified security standards. We never receive or store your credit card or financial details.</p>
+        </div>
+
+        <div class="section">
+          <h2><span class="section-icon">🛡️</span> 6. Children's Privacy Compliance (COPPA / GDPR-K)</h2>
+          <p>Our application is intended exclusively for operation by adult parents and caregivers. We do not knowingly solicit or collect personally identifiable information from children under 13.</p>
+        </div>
+
+        <div class="section">
+          <h2><span class="section-icon">🗑️</span> 7. User Rights & Data Deletion</h2>
+          <p>You maintain full sovereignty over your data:</p>
+          <ul>
+            <li>You can erase all locally stored logs at any time by clearing application storage in Android Settings or by uninstalling the app.</li>
+            <li>For inquiries regarding your anonymous device licensing token, contact our developer support team directly.</li>
+          </ul>
+        </div>
+
+        <div class="section">
+          <h2><span class="section-icon">✉️</span> 8. Support Contact</h2>
+          <div class="callout">
+            <p><strong>Ema: Baby Assistant AI Engineering Team</strong></p>
+            <p>Privacy & User Support Email: <strong>soporte@emababyassistant.com</strong></p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Ema: Baby Assistant AI. Todos los derechos reservados. | All rights reserved.</p>
+    <p style="margin-top: 6px; font-size: 0.75rem;">Conformidad con las Políticas de Desarrollador de Google Play Store.</p>
+  </footer>
+
+  <script>
+    function switchLang(lang) {
+      const esContent = document.getElementById('content-es');
+      const enContent = document.getElementById('content-en');
+      const btns = document.querySelectorAll('.lang-btn');
+      const title = document.getElementById('header-title');
+      const updated = document.getElementById('last-updated-text');
+
+      if (lang === 'es') {
+        esContent.classList.remove('hidden');
+        enContent.classList.add('hidden');
+        btns[0].classList.add('active');
+        btns[1].classList.remove('active');
+        title.textContent = 'Política de Privacidad';
+        updated.textContent = 'Última actualización: 29 de octubre de 2026';
+        document.documentElement.lang = 'es';
+      } else {
+        esContent.classList.add('hidden');
+        enContent.classList.remove('hidden');
+        btns[0].classList.remove('active');
+        btns[1].classList.add('active');
+        title.textContent = 'Privacy Policy';
+        updated.textContent = 'Last updated: October 29, 2026';
+        document.documentElement.lang = 'en';
+      }
+    }
+  </script>
+</body>
+</html>
